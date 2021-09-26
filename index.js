@@ -1,19 +1,23 @@
-// index.js
-var benjin,lilv,sum,i;
+// index.js
+var rand;
+function createRand(){
+  rand=[];
+  for(var i=0;i<7;i++){
+    var r=parseInt((Math.random()*31));
+    rand.push(r);
+  }
+};
 Page({
-  startnum:function(e){
-    benjin=parseFloat(e.detail.value);
-  },
-  endnum:function(e){
-    lilv = parseFloat(e.detail.value);
-  },
-  calc:function(){
-    for(i = 0;i<5;i++){
-      benjin = benjin * lilv + benjin ;
-    }
-    this.setData({
-      sum : parseInt(benjin)
-    })
-  }
-
+  onLoad:function(){
+    createRand();
+    this.setData({
+      rand:rand,
+    })
+  },
+  newRand:function(){
+    createRand();
+    this.setData({
+      rand:rand,
+    })
+  }
 })
