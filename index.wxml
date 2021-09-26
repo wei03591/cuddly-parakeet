@@ -1,0 +1,10 @@
+<!--index.wxml-->
+<view class = 'box'>
+  <view class = 'title'>电科19-2 董经纬 金额计算器</view>
+  <view>
+    <input placeholder ='请输入本金' type = 'number' bindblur = 'startnum'></input>
+    <input placeholder = '请输入利率'tupe = 'number' bindblur = 'endnum'></input>
+  </view>
+  <view>最终的金钱数{{sum}}</view>
+  <button type = 'primary' bindtap = 'calc'>计算</button>
+</view>

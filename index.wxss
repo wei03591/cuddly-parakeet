@@ -1,0 +1,19 @@
+/**index.wxss**/
+.title{
+  font-family : serif ;
+  text-align : center ;
+  color : rgb(72, 255, 0)
+}
+.box{
+  margin: 20rpx;
+  padding:20rpx;
+  border:1px solid rgb(255, 0, 0);
+}
+.input{
+  border-bottom:1px solid blue;
+  margin:20px 0 ;
+
+}
+.button{
+  margin-top:20px;
+}
